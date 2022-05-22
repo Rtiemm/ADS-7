@@ -29,7 +29,7 @@ void push(T symbol) {
         ITEM* elem = new ITEM;
         elem->vv = symbol;
         if (hh->vv.prior < elem->vv.prior) {
-            eelm->next = tl;
+            elem->next = tl;
             hh = elem;
         }
         while (tl != nullptr) {
